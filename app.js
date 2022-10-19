@@ -7,7 +7,7 @@ const path = require('path')
 const publicPath = path.resolve('public')
 app.use(express.static(publicPath))
 
-const port = process.env.port || 3001;
+const port = process.env.PORT || 3001;
 app.listen(port);
 
 app.get('/', (req, res) => {
