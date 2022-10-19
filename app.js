@@ -7,7 +7,8 @@ const path = require('path')
 const publicPath = path.resolve('public')
 app.use(express.static(publicPath))
 
-app.listen(3000)
+const port = process.env.port || 3001;
+app.listen(port);
 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve('views/home.html'))
@@ -24,3 +25,4 @@ app.get('/ingreso', (req, res) => {
 app.post('/', (req, res) => {
     res.sendFile(path.resolve('views/home.html'))
 })
+
