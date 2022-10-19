@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="parteSuperiorDelHeader">
+      <img class="logo" src="/images/logo-mercado-liebre.svg">
+      <form class="barraDeBusqueda"><input class="textoBarra" placeholder="Buscá productos, marcas..."><button><i class="fas fa-search"></i></button></i></form>
+      <p class="primerTitulo"> <i class="fas fa-hand-holding-usd"> </i> Compra en cuotas y sin tarjeta de crédito</p>
+    </div>
+    <div class="links">
+      <nav class="navBar">
+        <p>Ofertas</p>
+        <p>Tiendas oficiales</p>
+        <p>Vender</p>
+        <p>Ayuda</p>
+      </nav>
+      <nav class="logBar">
+        <a class="crearCuenta" href="/registro"><p>Creá tu cuenta <i class="far fa-id-card"></i></p></a>
+        <a class="ingresar" href="/ingreso"><p>Ingresá <i class="fas fa-sign-in-alt"></i></p></a>
+        <p>Mis compras <i class="fas fa-shopping-basket"></i> </p>
+      </nav>
+    </div>
+    <div class="burger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+    <div class="formulario">
+        <h3>Ingrese sus datos</h3>
+        <form action="/" method="post">
+            <div>
+                <input type="text" name="nombreUsuario" placeholder="Nombre de usuario">
+            </div>
+
+            <div>
+                <input type="password" name="contraseña" placeholder="Contraseña">
+            </div>
+            <div><button  class="botonIngresar" type="submit">Ingresar</button></div>
+        </form>
+    </div>
+</body>
+
+</html>

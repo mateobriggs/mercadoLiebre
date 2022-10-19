@@ -1,0 +1,281 @@
+/*BODY*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #eaeaea;
+    width: 100vw;
+}
+
+/*HEADER*/
+
+header {
+    width: 100vw;
+    background-color: #EAC926;
+    padding: 15px;
+}
+
+.parteSuperiorDelHeader {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 40%;
+}
+
+.barraDeBusqueda {
+    padding-left: 7px;
+    padding-right: 7px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.443);
+    align-self: center;
+    font-size: 12px;
+    justify-content: space-between
+}
+
+.textoBarra{
+    height: 100%;
+}
+.barraDeBusqueda input {
+    border: none;
+    width: 100%;
+}
+
+.barraDeBusqueda button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    height: 100%;
+}
+
+input:focus {
+    outline: none
+}
+
+.primerTitulo {
+    text-align: center;
+    font-size: 12px;
+    margin: 15px 0px;
+    align-self: center;
+}
+
+.links {
+    display: none;
+    font-size: 12px;
+}
+
+.navBar {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.logBar {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.crearCuenta,
+.ingresar {
+    text-decoration: none;
+    color: black
+}
+
+.burger-menu {
+    text-align: center;
+}
+
+.fa-bars {
+    background-color: #0044aa;
+    color: white;
+    padding: 6px;
+    border-radius: 7px;
+}
+
+/*MAIN*/
+
+main {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+}
+
+.tituloSeccion {
+    font-size: 24px;
+    margin: 15px;
+}
+
+article {
+    margin: 15px;
+    background-color: white;
+}
+
+.infoArticulo {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+.camionEnvio {
+    text-align: right;
+}
+
+main section article div p i {
+    color: #32b546;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    transition: all 0.5s;
+}
+
+main section article div p i:hover{
+    transform: rotate(-90deg);
+}
+.precioYDescuento {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuentos {
+    color: #32b546;
+    font-size: 16px;
+    width: 70%;
+    text-align: center;
+}
+
+.descripciones {
+    font-size: 16px;
+    display: none;
+}
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    margin: 15px;
+}
+
+h4 {
+    font-weight: bolder;
+}
+
+.cuerpoDeTexto {
+    font-size: 12px;
+}
+
+.fa-credit-card,
+.fa-gift,
+.fa-user-shield {
+    color: #0044aa;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.infoFinal {
+    line-height: 25px;
+    margin: 15px
+}
+
+
+
+/*MEDIAS*/
+
+@media(min-width: 425px) {
+    .logo {
+        width: 15%;
+    }
+
+    .barraDeBusqueda {
+        width: 40%;
+        height: 30px;
+    }
+
+    .primerTitulo {
+        width: 40%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .links {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    article {
+        width: 40%;
+        transition:all 500ms;
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);  
+    }
+    .descripciones{
+        height: 15px;
+    }
+    .descripciones:hover {
+        display: block;
+    }
+}
+
+@media(min-width: 769px) {
+    .primerTitulo {
+        font-size: 16px;
+    }
+
+    .links {
+        font-size: 16px
+    }
+
+    article {
+        width: 20vw;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .infoFinal{
+        width: 30%;
+    }
+    .fa-credit-card, .fa-gift, .fa-user-shield{
+        transition: all 0.5s;
+    }
+    
+    .fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover{
+        color:#03afe6
+    }
+}
