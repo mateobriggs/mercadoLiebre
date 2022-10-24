@@ -173,6 +173,10 @@ main section article div p i:hover{
     display: none;
 }
 
+.cuerpoDescripciones{
+    height: 16px;
+}
+
 /*FOOTER*/
 
 footer {
@@ -245,9 +249,12 @@ h4 {
     }
     .descripciones{
         height: 15px;
+        display: block;
+        color: white;
+        transition: all 0.3s;
     }
     .descripciones:hover {
-        display: block;
+        color: black;
     }
 }
 
